@@ -335,13 +335,13 @@ func (p *OpenRouterProvider) HandleFunctionCalls(body []byte) ([]byte, error) {
 }
 
 // mustMarshal is a helper function to marshal JSON and panic on error
-func mustMarshal(v interface{}) []byte {
-	b, err := json.Marshal(v)
-	if err != nil {
-		panic(err)
-	}
-	return b
-}
+// func mustMarshal(v interface{}) []byte {
+// 	b, err := json.Marshal(v)
+// 	if err != nil {
+// 		panic(err)
+// 	}
+// 	return b
+// }
 
 // SetExtraHeaders sets additional headers for the API request
 func (p *OpenRouterProvider) SetExtraHeaders(extraHeaders map[string]string) {
